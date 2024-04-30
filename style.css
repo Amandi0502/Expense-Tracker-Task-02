@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column ;
+}
+.header,.footer{
+    background-color: #1ABD72;
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+    text-align: center;
+    padding:20px;
+}
+.header{
+    font-size:2rem;
+}
+.main{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar{
+    background-color: #1ABD72;
+    color: white;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.text{
+    color: #eee;
+    font-size:0.8rem;
+    margin-bottom: 2px;
+}
+
+.amount_holder{
+    font-size: 2rem;
+}
+
+.form{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form p{
+    font-size: 1.4rem;
+}    
+
+label,input{
+    display:block;
+}
+
+input{
+    padding: 5px 10px;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background-color: #1ABD72;
+    color:white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #095744;
+
+}
+
+p.heading{
+    margin: 10px 0;
+}
+ul{
+    list-style:none;
+
+}
+
+.transaction{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    color: white;
+    margin: 5px 0;
+}
+
+.income{
+    background-color: #1ABD72;
+}
+
+.expense{
+    background-color:#E5415E;
+}
+
+right_side{
+    display:flex;
+    gap:5px;
+}
+
+.right_side button{
+    color:white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.right_side button:hover{
+    color:skyblue;
+}
+
+#cancel{
+    background-color: #E5415E;
+    display: none;
+
+}
+
+#cancel:hover{
+    background-color:red;
+}

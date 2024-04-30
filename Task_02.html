@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Expense Tracker.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <div class="header">
+        OUR EXPENSE TRACKER
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="topbar">
+                <p class ="text">Your current balance</p>
+                <p class ="amount_holder"></p>
+                  <span id ="currency">$</span>
+                  <span id ="balance">1000</span>  
+            </div>
+            
+            <div class="form">
+                <p>Add Transaction.</p>
+                <div class="form-control">
+                    <label for ="name">Purpose</label>
+                    <input type ="text" name="name" id="name" placeholder= "e.g.My salary">
+                </div>
+            
+                <div class="form-control">
+                    <label for="name">Type</label>
+                    <div class="radio">
+                        <input type ="radio" name="type" id="income" checked>
+                        <label for ="radio"> Income</label>
+                    </div>
+                    <div class="radio">
+                        <input type ="radio" name="type" id="expense">
+                        <label for ="radio"> Expense</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for ="amount">Amount</label>
+                    <input type ="number" name="amount" id="amount" placeholder="e.g.400">
+                </div> 
+                <button class ="btn"  id ="save">Save Transaction.</button> 
+                <button class ="btn"  id ="cancel">cancel edit.</button> 
+
+            </div>
+            <p class="heading">Transaction List:</p>
+
+            <ul id="list_of_transaction">
+                <li class="transaction income">
+                    <p>Income 1</p>
+                    <div class="right_side">
+                        <p>$300</p>
+                        <button><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </li>
+            
+                <li class="transaction expense">
+                    <p>Expense 1</p>
+                    <div class="right_side">
+                        <p>$100</p>
+                        <button><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="footer">
+            Made by Amandi Lochana.
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+    <script src="app.js"></script>
+</body>
+</html>
